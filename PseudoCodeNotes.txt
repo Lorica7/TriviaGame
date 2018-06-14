@@ -1,0 +1,55 @@
+Page loads:
+    User sees the Jumbotron contents
+                    -title
+                    -instructions
+                    -start button
+    Does NOT see quiz or timer.
+
+    USER INPUT - onclick, page shows all html with quiz questions. 
+                            shows timer,
+                            starts timer.
+
+                            How to prevent another click from interferring with counting time?
+        JS uses setInterval for a designated time for the quiz.
+
+        Variables Needed:
+            10 empty userAnswers declared. assigned later.
+                    or one array for the user input?
+
+            10 correct answer Variable
+                    or one array if that can work.
+        
+        an empty variable for score, for total right, and total wrong.
+
+        When user makes selection (is onSelect an event), its answer saved to variable
+        if select forms can't be used will use radio buttons and onclick event.
+
+        once user values are stored an Evaluate function needs to be called.
+
+        Evaluate
+            if (userVal1 === RightAnswer1 && timeinterval still going) {
+                div border of question turns green;
+                total score + 10
+                number correct ++;
+                
+            } else (userVal !== RightAnswer1 && time interval stillgoing) {
+                div border of question turns red.
+                total score stays the same.
+                number wrong ++;
+            } else ( answer is right or wrong but TIME IS UP) {
+                prompt(Sorry Time is up) {
+                    change screen to reflect final scores.
+                    timer stops or sets to 00:00
+                }
+            }
+
+            THIS COULD REPEAT FOR EVERY QUESTION.
+
+            OR Evaluate is set up to run a for loop that goes through two arrays (userAnsers and Right Answers and
+            compares them)
+
+            IF USER FINISHES BEFORE TIME INTERVAL IS UP
+             alert (Great Job on finishing on time!)
+             screen shows number right, number wrong, total answered
+
+             maybe also show list of right answers

@@ -1,4 +1,23 @@
-   //  Start on click.
+  //Variables
+
+  let numRight;
+  let numWrong;
+  let totalQuestions = 10;
+  
+  let userAnswer1 = "";
+  let userAnswer2 = "";
+  let userAnswer3 = "";
+  let userAnswer4 = "";
+  let userAnswer5 = "";
+  let userAnswer6 = "";
+  let userAnswer7 = "";
+  let userAnswer8 = "";
+  let userAnswer9 = "";
+  let userAnswer10 = "";
+  
+  
+  
+  //  Start on click.
    $("#start").on("click", function() {
     //  Set the button alert's timeout to run three seconds after the function's called.
     delayButtonAlert = setTimeout(function() {
@@ -78,3 +97,42 @@ window.onload = function() {
 
       $("#totalSel").text("");
     },
+
+
+    start: function() {
+
+        // DONE: Use setInterval to start the count here and set the clock to running.
+        if (!clockRunning) {
+          intervalId = setInterval(stopwatch.count, 1000);
+          clockRunning = true;
+        }
+      },
+      stop: function() {
+    
+        // DONE: Use clearInterval to stop the count here and set the clock to not be running.
+        clearInterval(intervalId);
+        clockRunning = false;
+
+****************************************
+
+        checkCorrect function 
+
+        This example returns a list of all <div> elements within the document with a class of either "note" or "alert":
+
+var matches = document.querySelectorAll("div.note, div.alert")
+
+***************************************************
+
+Each jQuery object also masquerades as an array, so we can use the array dereferencing operator to get at the list item instead:
+
+console.log( $( "li" )[ 0 ] );
+
+
+var stone = $(“.stone”);
+you're not accessing a specific one
+var stone = $(“.stone”).get(i);
+
+
+
+
+if its in class sdassdf && class sdkfhsldihs   ----> then correct

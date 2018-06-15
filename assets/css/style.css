@@ -1,0 +1,22 @@
+/* Modifying the Bootstrap Styles */
+
+
+body {
+    align-content: center;
+    margin: auto;
+}
+
+#container {
+    align-self: center;
+    margin: auto;
+}
+
+
+/* to Hide content before button click */
+#AllTestContent {
+    display: block;
+}
+
+.wrong {
+    border: red 3px solid;
+}

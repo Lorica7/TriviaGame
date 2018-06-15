@@ -7,6 +7,7 @@
     <link rel="stylesheet" type = "text/css" href="assets/css/style.css">
 </head>
 <body>
+    <div id="container d-flex justify-content-center">
     <div class="jumbotron">
             <h1 class="display-4">Timed Trivia Game</h1>
             <p class="lead">Test your knowledge about _____ by taking this 10 question, timed quiz</p>
@@ -14,10 +15,11 @@
             <p>Once you press the button below, the questions will be revealed and the timer will start. <br>
                     Good Luck!
             </p>
-            <a ID = "quizStart" class="btn btn-primary btn-lg" href="#" role="button">START QUIZ</a>
+            <button onclick = "startTest()" id = "startButton" class="btn btn-primary btn-lg" role="button">START QUIZ</button>
     </div>
+    <div id ="AllTestContent">
 
-    <select id="Qone" class="custom-select custom-select-lg mb-3">
+    <select id="Qone" class="custom-select custom-select-lg mb-3 w-50 d-inline-flex align-center">
         <option selected>Write Question 1 Here</option>
         <option value="one1">One</option>
         <option value="one2">Two</option>
@@ -25,7 +27,7 @@
         <option value="one4">Four</option>
       </select>
 
-    <select id="Qtwo" class="custom-select custom-select-lg mb-3">
+    <select id="Qtwo" class="custom-select custom-select-lg mb-3 w-50 d-inline-flex justify-content-center">
         <option selected>Write Question 2 Here</option>
         <option value="two1">One</option>
         <option value="two2">Two</option>
@@ -95,12 +97,13 @@ ___________________________-Halfway Point (5 questions to go)  _________________
 
 <select id="Qten" class="custom-select custom-select-lg mb-3">
     <option selected>Write Question 10 Here</option>
-    <option value="ten1">One</option>
-    <option value="ten2">Two</option>
-    <option value="ten3">Three</option>
-    <option value="ten4">Four</option>
-</select>
-
+        <option value="ten1">One</option>
+        <option value="ten2">Two</option>
+        <option value="ten3">Three</option>
+        <option value="ten4">Four</option>
+    </select>
+    </div>
+</div>
     <script src = "assets/javascript/app.js"></script>
 </body>
 

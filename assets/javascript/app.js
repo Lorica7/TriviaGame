@@ -127,12 +127,3 @@ Each jQuery object also masquerades as an array, so we can use the array derefer
 
 console.log( $( "li" )[ 0 ] );
 
-
-var stone = $(“.stone”);
-you're not accessing a specific one
-var stone = $(“.stone”).get(i);
-
-
-
-
-if its in class sdassdf && class sdkfhsldihs   ----> then correct

@@ -15,15 +15,18 @@
             <p>Once you press the button below, the questions will be revealed and the timer will start. <br>
                     Good Luck!
             </p>
-            <button onclick = "startTest()" id = "startButton" class="btn btn-primary btn-lg" role="button">START QUIZ</button>
-    </div>
+            <button onclick = "startTest()" id = "start" class="btn btn-primary btn-lg" role="button">START QUIZ</button>
+            <div id=<"wrapper">
+                <div id="display">00:00</div>
+              </div>
+        </div>
     <div id ="AllTestContent">
 
         <h5 id="Qone">What movie won 11 Oscars including Best Picture, Best Director, and Best Costume Design?</h5>
     <select class="custom-select custom-select-lg mb-3 w-50 d-inline-flex align-center">
-        <option selected>]</option>
+        <option selected></option>
         <option value="one1">Gone With The Wind</option>
-        <option value="one2" class="correct">Titanic</option>
+        <option value="correct">Titanic</option>
         <option value="one3">West Side Story</option>
         <option value="one4">My Fair Lady</option>
       </select>
@@ -31,7 +34,7 @@
       <h5 id="Qtwo">Which recording artist is the only one to ever refuse a Grammy Award?</h5>
     <select class="custom-select custom-select-lg mb-3 w-50 d-inline-flex justify-content-center">
         <option selected></option>
-        <option value="two1">Sinead O'Connor</option>
+        <option value="correct">Sinead O'Connor</option>
         <option value="two2">Bono</option>
         <option value="two3">Madonna</option>
         <option value="two4">Sting</option>
@@ -44,13 +47,13 @@
         <option value="three1">Emily Dickinson</option>
         <option value="three2">Ernest Hemmingway</option>
         <option value="three3">Sylvia Plath</option>
-        <option value="three4" class = "correct">Mary Shelley</option>
+        <option value="correct">Mary Shelley</option>
     </select>
 
         <h5 id="Qfour">Which artist is famous for a style developed during the "Blue Period" among others?</h5>
     <select class="custom-select custom-select-lg mb-3">
         <option selected></option>
-        <option value="four1" class="correct">Pablo Picasso</option>
+        <option value="correct">Pablo Picasso</option>
         <option value="four2">Claude Monet</option>
         <option value="four3">El Greco</option>
         <option value="four4">Georges Braque</option>
@@ -62,7 +65,7 @@
         <option value="five1">Andy Warhol</option>
         <option value="five2">Marc Chagall</option>
         <option value="five3">Jackson Pollack</option>
-        <option value="five4" class="correct">Keith Haring</option>
+        <option value="correct">Keith Haring</option>
     </select>
 <!-- __________________________________________________________________________________________________________
 ___________________________-Halfway Point (5 questions to go)  ________________________________________-->
@@ -72,14 +75,14 @@ ___________________________-Halfway Point (5 questions to go)  _________________
     <option value="six1">Albrect Durer</option>
     <option value="six2">Piet Mondrian</option>
     <option value="six3">Johannes Vermeer</option>
-    <option value="six4"class ="correct">Rembrant</option>
+    <option value="correct">Rembrant</option>
   </select>
 
   <h5 id="Qseven" >What singer has received 2 stars on the Hollywood Walk of Fame and recorded more than 57 studio albums?</h5>
 <select class="custom-select custom-select-lg mb-3">
     <option selected></option>
     <option value="seven1">Barbara Streisand</option>
-    <option value="seven2" class= "correct">Diana Ross</option>
+    <option value="correct">Diana Ross</option>
     <option value="seven3">Mariah Carey</option>
     <option value="seven4">Madonna</option>
 </select>
@@ -87,7 +90,7 @@ ___________________________-Halfway Point (5 questions to go)  _________________
 <h5>Which book is responsible for the spread of the number 42 in all kinds of cultural references?</h5>
 <select id="Qeight" class="custom-select custom-select-lg mb-3">
     <option selected></option>
-    <option value="eight1" class= "correct">The Hitchhikers Guide to the Galaxy</option>
+    <option value="correct">The Hitchhikers Guide to the Galaxy</option>
     <option value="eight2">The Twilight Zone</option>
     <option value="eight3">The X Factor</option>
     <option value="eight4">So Long, and Thanks for all the Fish</option>
@@ -97,7 +100,7 @@ ___________________________-Halfway Point (5 questions to go)  _________________
 <select class="custom-select custom-select-lg mb-3">
     <option selected></option>
     <option value="nine1">Langston Hughs</option>
-    <option value="nine2">Gwendolyn Brooks</option>
+    <option value="correct">Gwendolyn Brooks</option>
     <option value="nine3">Maya Angelou</option>
     <option value="nine4">Zora Neale Hurston</option>
 </select>
@@ -105,7 +108,7 @@ ___________________________-Halfway Point (5 questions to go)  _________________
 <h5 id="Qten">Who composed Appalacian Spring?</h5>
 <select  class="custom-select custom-select-lg mb-3">
     <option selected></option>
-        <option value="ten1">Aaron Copeland</option>
+        <option value="correct">Aaron Copeland</option>
         <option value="ten2">Leonard Bernstein</option>
         <option value="ten3">Steven Sondheim</option>
         <option value="ten4">Herbert Blomstedt</option>

@@ -13,7 +13,7 @@ body {
 
 
 /* to Hide content before button click */
-#AllTestContent {
+.showTest {
     display: block;
 }
 

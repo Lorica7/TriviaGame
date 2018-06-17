@@ -7,6 +7,7 @@
   var timerRunning = false;
   let rightAnswers = $("option[value='correct']")
   var number = 1180000
+  var decrement = number - 1000;
   
   window.onload = function() {
         $("#AllTestContent").hide();
@@ -19,7 +20,7 @@
       $("#start").click(function(){
         $("#AllTestContent").show();
       intervalId= setInterval(decrement, 1000);
-      number--;
+      clearInterval(intervalId);
     })
       if (number === 0) {
         stop();
@@ -27,17 +28,18 @@
       }
     };
   console.log(number)
-/*
-const checkAnswers = function () {
-  $("submit").on("click", function(){  */
-      var select = $("select")
-      addEvent(select, 'change', function (){
-          if (this.value === "correct"){
-              numRight++;
-          } else {
-          numWrong++;
+
+const checkAnswers = function (){ 
+  let option = document.getElementsByTagName("option");
+    if (option.value == "correct"){
+        numRight++;
+      } else {
+       numWrong++;
       };
-      });
+      };
+
+  
+const addFinalNum = function () {
 let numFinished = totalQuestions - (numRight+ numWrong);
 //print numFinished to screen
 let finalScore = 50 + numRight * 5;
@@ -49,7 +51,11 @@ document.getElementById("finalScore").innerHTML("Final Score: " + finalScore);
 console.log(numRight)
 console.log(numWrong)
 console.log(finalScore);
-  
+
+    };   
+
+    $("#ubmit").on("click", checkAnswers());
+    $("#submit").on("click"), addFinalNum ();
 
   
 

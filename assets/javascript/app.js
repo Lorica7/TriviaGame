@@ -6,38 +6,30 @@
   var intervalId;
   var timerRunning = false;
   let rightAnswers = $("option[value='correct']")
-  
+  var number = 1180000
   
   window.onload = function() {
         $("#AllTestContent").hide();
-      $("#display").text("00:00");
-
-  
-    
+      $("#display").text("1800000"); 
+  };
+      
   //  Start on click.
-   $("#start").on("click", function startTest() { 
-    if (!clockRunning) {
-      intervalId = setInterval(stopwatch.count, 1180000);
-      clockRunning = true;
-    }
-   // $(#AllTestContent).classList.add("showTest");
-    $("#show").click(function(){
+  function startTest(b) {
+    
+      $("#start").click(function(){
         $("#AllTestContent").show();
-  });
- 
- 
-  stop: function() {
-    // DONE: Use clearInterval to stop the count here and set the clock to not be running.
-    clearInterval(intervalId);
-    clockRunning = false;
-
-    console.log("done");
-    $("#time-left").append("<h2>Time's Up!</h2>");
-    console.log("time is up");
-
+      intervalId= setInterval(decrement, 1000);
+      number--;
+    })
+      if (number === 0) {
+        stop();
+        alert("Time Up!");
+      }
+    };
+  console.log(number)
+/*
 const checkAnswers = function () {
-  $("submit").on("click", function(){
-    const checkAnswer = function (){
+  $("submit").on("click", function(){  */
       var select = $("select")
       addEvent(select, 'change', function (){
           if (this.value === "correct"){
@@ -46,27 +38,33 @@ const checkAnswers = function () {
           numWrong++;
       };
       });
-    }
 let numFinished = totalQuestions - (numRight+ numWrong);
 //print numFinished to screen
 let finalScore = 50 + numRight * 5;
-  })
-    
-    
-    /*   
- 
-  var quizTimer = {
 
-    time: 0,
-    numWrong: 0,
-    numRight: 0,
-    totalSel: 0,
+document.getElementById("numRight").innerHTML("Number Right: " + numRight);
+document.getElementById("numWrong").innerHTML("Number Wrong: " + numWrong);
+document.getElementById("finalScore").innerHTML("Final Score: " + finalScore);
+
+console.log(numRight)
+console.log(numWrong)
+console.log(finalScore);
+  
+
+  
+
+
+/*
+var game {
+  correct: 0,
+  incorrect: 0,
+  counter: 120,
+  countdown: function () {
+    game.counter: --;
+    $("#display").html(game.counter;)
+    if (game.counter <= 0 ) {
+      alert("Times Up!");
+    }
   }
-
-
- 
-
-        This example returns a list of all <div> elements within the document with a class of either "note" or "alert":
-
-var matches = document.querySelectorAll("div.note, div.alert")
-*/}
+};   */
+      
